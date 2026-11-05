@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+        <p>Manage student records efficiently</p>
+    </header>
+
+    <main class="container">
+
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+
+            <div class="summary-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+
+                <input type="text" id="name"
+                    placeholder="Full Name" required>
+
+                <input type="email" id="email"
+                    placeholder="Email Address" required>
+
+                <input type="tel" id="phone"
+                    placeholder="Phone Number" required>
+
+                <input type="text" id="course"
+                    placeholder="Course" required>
+
+                <input type="text" id="semester"
+                    placeholder="Semester / Year" required>
+
+                <input type="text" id="address"
+                    placeholder="Address" required>
+
+                <button type="submit">Add Student</button>
+
+            </form>
+        </section>
+
+        <section class="records-section">
+            <h2>Student Records</h2>
+
+            <input type="text" id="search"
+                placeholder="Search students...">
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Course</th>
+                            <th>Semester</th>
+                            <th>Address</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student Management System | Auspify Internship Project</p>
+    </footer>
+
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+
+</body>
+</html>

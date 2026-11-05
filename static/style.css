@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f6fb;
+    color: #263238;
+}
+
+/* Header */
+
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Dashboard */
+
+.dashboard {
+    margin-bottom: 30px;
+}
+
+.dashboard h2,
+.form-section h2,
+.records-section h2 {
+    margin-bottom: 18px;
+    color: #172554;
+}
+
+.summary-card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.summary-card h3 {
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Form */
+
+.form-section,
+.records-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+/* Buttons */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Search */
+
+#search {
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+
+/* Table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th, td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #172554;
+    color: white;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+/* Footer */
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .form-section,
+    .records-section {
+        padding: 15px;
+    }
+}
